@@ -1,0 +1,114 @@
+:root {
+    --primary: hsl(185, 75%, 39%);
+    --secondary: hsl(229, 23%, 23%);
+    --thirty: hsl(227, 10%, 46%);
+    --dark: hsl(0, 0%, 59%);
+    --font-primary: 'Kumbh Sans', sans-serif;
+}
+
+*{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: var(--font-primary);
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.card-background {
+    background-image: url("/images/bg-pattern-card.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 120px;
+}
+
+.card-image {
+    border-radius: 50%;
+    bottom: -50px;
+    position : absolute; 
+    border: 5px solid white;    
+}
+
+.card-body{
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    color: var(--secondary);
+    font-size: 18px;
+    margin-right: 0.5rem;
+}
+
+.age{
+    color: var(--dark);
+}
+
+.city{
+    color: var(--dark);
+}
+
+.counter{
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.card-stadistics{
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.stadistics-container{
+    color: var(--thirty);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider{
+    color: var(--dark);
+}
+
+
+
+
+@media (max-width: 375px) {
+    /* desktop  */
+}
